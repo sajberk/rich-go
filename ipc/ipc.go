@@ -13,6 +13,10 @@ var socket net.Conn
 // Choose the right directory to the ipc socket and return it
 func GetIpcPath() string {
 	variablesnames := []string{"XDG_RUNTIME_DIR", "TMPDIR", "TMP", "TEMP"}
+	
+	if _, err := os.Stat("/run/user/1000/snap.discord"); err == nil {
+		return "/run/user/1000/snap.discord"
+	}
 
 	for _, variablename := range variablesnames {
 		path, exists := os.LookupEnv(variablename)
