@@ -1,20 +1,18 @@
-# rich-go [![Build Status](https://travis-ci.org/hugolgst/rich-go.svg?branch=master)](https://travis-ci.org/hugolgst/rich-go)
-
-An implementation of Discord's rich presence in Golang for Linux, macOS and Windows
+An implementation of Discord's rich presence in Golang for Linux, macOS and Windows, forked from hugolgst and adjusted for Snap and go module support that the other Snap fork did not have
 
 ## Installation
 
-Install `github.com/hugolgst/rich-go`:
+Install `github.com/sajberk/rich-go`:
 
 ```
-$ go get github.com/hugolgst/rich-go
+$ go get github.com/sajberk/rich-go
 ```
 
 ## Usage
 
 First of all import rich-go
 ```golang
-import "github.com/hugolgst/rich-go/client"
+import "github.com/sajberk/rich-go/client"
 ```
 
 then login by sending the first handshake
@@ -53,13 +51,13 @@ More details in the [example](https://github.com/ananagame/rich-go/blob/master/e
 
 ## Contributing
 
-1. Fork it (https://github.com/hugolgst/rich-go/fork)
+1. Fork my repo or the original (https://github.com/hugolst/rich-go/fork)
 2. Create your feature branch (git checkout -b my-new-feature)
 3. Commit your changes (git commit -am 'Add some feature')
 4. Push to the branch (git push origin my-new-feature)
 5. Create a new Pull Request
 
-## Contributors
+## Original contributors
 
 - [hugolgst](https://github.com/hugolgst) - creator, maintainer
 - [donovansolms](https://github.com/donovansolms) - contributor
